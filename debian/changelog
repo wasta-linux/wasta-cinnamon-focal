@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.2) focal; urgency=medium
+
+  * debian/install: correct naome of Arc-Dark-Wasta
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sun, 24 Nov 2019 18:08:56 +0300
+
 wasta-cinnamon-focal (0.1.1) focal; urgency=medium
 
   * initial focal release
