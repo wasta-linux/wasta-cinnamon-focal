@@ -1,0 +1,20 @@
+# z_11_wasta-cinnamon.gschema.override
+#
+#   If same key overridden in 2 files, "last wins" regarding filenames
+#       (so a "z_10_*" filename would win over a "10_*" filename)
+#       wasta-core uses "z_10_*" filenames, regional customizations
+#       use "z_20_*" filenames.
+#
+#   After modifying these .override files, reload with:
+#       glib-compile-schemas /usr/share/glib-2.0/schemas/
+#
+#   2018-04-04 rik: initial settings for bionic.  Only backgrounds for now
+#       as all main cinnamon settings are set in wasta-cinnamon-layout
+#
+# ==============================================================================
+
+[org.cinnamon.desktop.background]
+picture-uri = 'file:///usr/share/wasta-multidesktop/resources/clarity_by_sigi_sagi.jpg'
+
+[org.gnome.desktop.background]
+picture-uri = 'file:///usr/share/wasta-multidesktop/resources/clarity_by_sigi_sagi.jpg'
