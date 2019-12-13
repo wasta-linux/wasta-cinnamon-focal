@@ -25,7 +25,7 @@
 #   2017-12-03 rik: initial bionic release
 #   2018-04-03 rik: removing schemas compile: schemas now in
 #       wasta-cinnmaon-layout-3-6
-#   2018-04-04 rik: re-adding schemas compile: only needed for backgrounds
+#   2018-04-04 rik: re-adding schemas compile
 #
 # ==============================================================================
 

@@ -1,3 +1,11 @@
+wasta-cinnamon-focal (0.1.3) focal; urgency=medium
+
+  * schemas: removing z_12_cinnamon-default and merging with
+    z_11_wasta-cinnamon: cinnamon-layout no longer defines defaults
+    to accomodate other distro theming, etc.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 13 Dec 2019 13:51:08 +0300
+
 wasta-cinnamon-focal (0.1.2) focal; urgency=medium
 
   * debian/install: correct naome of Arc-Dark-Wasta
