@@ -191,16 +191,19 @@ then
 fi
 
 SYSTEM_LAYOUT="default"
-if [ -L /usr/share/glib-2.0/schemas/z_15_wasta-layout-redmond7.gschema.override ];
+if [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-traditional.gschema.override ];
+then
+    SYSTEM_LAYOUT=traditional
+elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-redmond7.gschema.override ];
 then
     SYSTEM_LAYOUT=redmond7
-elif [ -L /usr/share/glib-2.0/schemas/z_15_wasta-layout-unity.gschema.override ];
+elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-unity.gschema.override ];
 then
     SYSTEM_LAYOUT=unity
-elif [ -L /usr/share/glib-2.0/schemas/z_15_wasta-layout-cupertino.gschema.override ];
+elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-cupertino.gschema.override ];
 then
     SYSTEM_LAYOUT=cupertino
-elif [ -L /usr/share/glib-2.0/schemas/z_15_wasta-layout-widescreen.gschema.override ];
+elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-widescreen.gschema.override ];
 then
     SYSTEM_LAYOUT=widescreen
 fi
