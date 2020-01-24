@@ -61,7 +61,7 @@ show-snap-osd = false
 startup-animation = false
 
 [org.cinnamon.desktop.background]
-picture-uri = 'file:///usr/share/wasta-core/resources/daniel-von-appen-wasta-text.jpg'
+picture-uri = 'file:///usr/share/backgrounds/wasta/moren-hsu-unsplash-wasta-logos.jpg'
 
 [org.cinnamon.desktop.interface]
 clock-show-date = true
@@ -165,7 +165,7 @@ xkb-icon-rgba = '#FFFFFF'
 use-custom-font = true
 
 [org.gnome.desktop.background]
-picture-uri = 'file:///usr/share/wasta-core/resources/daniel-von-appen-wasta-text.jpg'
+picture-uri = 'file:///usr/share/backgrounds/wasta/moren-hsu-unsplash-wasta-logos.jpg'
 
 [org.gtk.Settings.FileChooser]
 sort-directories-first = true
