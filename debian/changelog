@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.5) focal; urgency=medium
+
+  * schemas: changing icon theme to ePapirus
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 24 Jan 2020 15:15:59 +0300
+
 wasta-cinnamon-focal (0.1.4) focal; urgency=medium
 
   * schemas: adjusting default background

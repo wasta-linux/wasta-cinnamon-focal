@@ -70,7 +70,7 @@ cursor-theme = 'DMZ-White'
 font-name = 'Ubuntu 11'
 gtk-overlay-scrollbars = false
 gtk-theme = 'Arc-Darker'
-icon-theme = 'wasta-papirus'
+icon-theme = 'ePapirus'
 
 [org.cinnamon.desktop.lockdown]
 disable-user-switching = true
