@@ -178,6 +178,10 @@ echo "*** Ensuring all Cinnamon components upgraded"
 echo
 $DEBIAN_NONINTERACTIVE apt-get $YES dist-upgrade
 
+# ensure wasta-cinnamon-bionic postinst changes applied (such as setting
+#   default menu-icon.svg)
+dpkg-reconfigure wasta-cinnamon-focal
+
 # ------------------------------------------------------------------------------
 # Ensure cinnamon-layout-system updates applied
 # ------------------------------------------------------------------------------

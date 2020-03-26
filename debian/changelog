@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.8) focal; urgency=medium
+
+  * wasta-cinnamon-upgrade: re-run wasta-cinnamon-focal postinst
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 26 Mar 2020 17:27:24 +0300
+
 wasta-cinnamon-focal (0.1.7) focal; urgency=medium
 
   * wasta-cinnamon-upgrade: migrating to cinnamon-layout
