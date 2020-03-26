@@ -62,7 +62,7 @@ echo
 echo "*** Installing Wasta-Linux default menu-icon to update-alternatives system"
 echo
 update-alternatives --install $LAYOUT_DIR/menu-icon.svg menu-icon \
-    $DIR/resources/wl-mono-squircle.svg 200
+    $DIR/resources/wl-mono-squircle.svg 150
 
 # ------------------------------------------------------------------------------
 # Dconf / Gsettings Default Value adjustments
