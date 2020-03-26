@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.6) focal; urgency=medium
+
+  * postinst: installing wl-mono-squircle.svg as menu-icon
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 26 Mar 2020 13:09:30 +0300
+
 wasta-cinnamon-focal (0.1.5) focal; urgency=medium
 
   * schemas: changing icon theme to ePapirus

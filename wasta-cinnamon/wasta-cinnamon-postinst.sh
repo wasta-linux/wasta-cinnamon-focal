@@ -26,6 +26,7 @@
 #   2018-04-03 rik: removing schemas compile: schemas now in
 #       wasta-cinnmaon-layout-3-6
 #   2018-04-04 rik: re-adding schemas compile
+#   2020-03-26 rik: installing wl-mono-squircle.svg as menu-icon alternative
 #
 # ==============================================================================
 
@@ -52,6 +53,16 @@ echo
 
 # Setup Directory for later reference
 DIR=/usr/share/wasta-cinnamon
+LAYOUT_DIR=/usr/share/cinnamon-layout
+
+# ------------------------------------------------------------------------------
+# install menu-icon using update-alternatives
+# ------------------------------------------------------------------------------
+echo
+echo "*** Installing Wasta-Linux default menu-icon to update-alternatives system"
+echo
+update-alternatives --install $LAYOUT_DIR/menu-icon.svg menu-icon \
+    $DIR/resources/wl-mono-squircle.svg 200
 
 # ------------------------------------------------------------------------------
 # Dconf / Gsettings Default Value adjustments
