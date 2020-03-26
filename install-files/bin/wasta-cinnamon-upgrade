@@ -11,6 +11,7 @@
 #   2019-02-23 rik: updating for Cinnamon 4.0
 #   2019-08-09 rik: updating for Cinnamon 4.2
 #   2019-08-09 rik: updating for focal
+#   2020-03-26 rik: updating wasta-layout to cinnamon-layout
 #
 # ==============================================================================
 
@@ -154,9 +155,7 @@ echo
 #   will error and not remove anything.  So instead found this way to do it:
 #       http://superuser.com/questions/518859/ignore-packages-that-are-not-currently-installed-when-using-apt-get-remove
 #pkgToRemoveListFull="\
-#    wasta-cinnamon-layout-3-6 \
-#    wasta-cinnamon-layout-3-8 \
-#    wasta-cinnamon-layout-4-0"
+#    cinnamon-layout-4-4"
 
 pkgToRemoveList=""
 for pkgToRemove in $(echo $pkgToRemoveListFull); do
@@ -169,10 +168,10 @@ done
 $DEBIAN_NONINTERACTIVE apt-get $YES purge $pkgToRemoveList
 
 echo
-echo "*** Ensuring newest wasta-cinnamon-layout installed"
+echo "*** Ensuring newest cinnamon-layout installed"
 echo
 
-#$DEBIAN_NONINTERACTIVE apt-get $YES install wasta-cinnamon-layout-4-2
+#$DEBIAN_NONINTERACTIVE apt-get $YES install cinnamon-layout-4-4
 
 echo
 echo "*** Ensuring all Cinnamon components upgraded"
@@ -180,7 +179,7 @@ echo
 $DEBIAN_NONINTERACTIVE apt-get $YES dist-upgrade
 
 # ------------------------------------------------------------------------------
-# Ensure wasta-layout-system updates applied
+# Ensure cinnamon-layout-system updates applied
 # ------------------------------------------------------------------------------
 
 #first make sure app-adjustments applied (to customize cinnamon applets, etc.)
@@ -190,31 +189,35 @@ then
     bash $APP_ADJ || true;
 fi
 
+SCHEMAS_DIR=/usr/share/glib-2.0/schemas
 SYSTEM_LAYOUT="default"
-if [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-traditional.gschema.override ];
-then
-    SYSTEM_LAYOUT=traditional
-elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-redmond7.gschema.override ];
+if [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-redmond7.gschema.override ];
 then
     SYSTEM_LAYOUT=redmond7
-elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-unity.gschema.override ];
+elif [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-unity.gschema.override ];
 then
     SYSTEM_LAYOUT=unity
-elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-cupertino.gschema.override ];
+elif [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-cupertino.gschema.override ];
 then
     SYSTEM_LAYOUT=cupertino
-elif [ -L /usr/share/glib-2.0/schemas/z_15_cinnamon-layout-widescreen.gschema.override ];
+elif [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-widescreen.gschema.override ];
 then
     SYSTEM_LAYOUT=widescreen
+elif [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-gnome2.gschema.override ];
+then
+    SYSTEM_LAYOUT=gnome2
+elif [ -L $SCHEMAS_DIR/z_15_cinnamon-layout-traditional.gschema.override ];
+then
+    SYSTEM_LAYOUT=traditional
 fi
 
 echo
-echo "*** Running wasta-layout-system to ensure settings updated for layout: $SYSTEM_LAYOUT"
+echo "*** Running cinnamon-layout-system to ensure settings updated for layout: $SYSTEM_LAYOUT"
 echo
-wasta-layout-system $SYSTEM_LAYOUT
+cinnamon-layout-system $SYSTEM_LAYOUT
 
 # ------------------------------------------------------------------------------
-# Ensure wasta-layout updates applied for all users
+# Ensure cinnamon-layout updates applied for all users
 # ------------------------------------------------------------------------------
 for CINN_SETTINGS in /home/*/.cinnamon;
 do
@@ -224,25 +227,25 @@ do
 
     # determine current user layout
     USER_LAYOUT=$SYSTEM_LAYOUT
-    CONFIG_FILE=/home/$CINN_OWNER/.config/wasta-layout/current-wasta-layout.txt
+    CONFIG_FILE=/home/$CINN_OWNER/.config/cinnamon-layout/current-cinnamon-layout.txt
 
     # until cinnamon 4.0, no user config file storing current user layout
     if [ -e $CONFIG_FILE ];
     then
         USER_LAYOUT=$(cat $CONFIG_FILE)
         echo
-        echo "*** Found existing wasta-layout for $CINN_OWNER: $USER_LAYOUT"
+        echo "*** Found existing cinnamon-layout for $CINN_OWNER: $USER_LAYOUT"
         echo
     fi
 
-    # below will run wasta-layout as different user, but FULL environment not
+    # below will run cinnamon-layout as different user, but FULL environment not
     #   available so no known $DESKTOP_SESSION for example and thus won't
     #   restart cinnamon
     echo
-    echo "*** Running wasta-layout for $CINN_OWNER to ensure settings updated for layout: $USER_LAYOUT"
+    echo "*** Running cinnamon-layout for $CINN_OWNER to ensure settings updated for layout: $USER_LAYOUT"
     echo
     sudo -Hu $CINN_OWNER DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$CINN_OWNER_ID/bus \
-        wasta-layout $USER_LAYOUT
+        cinnamon-layout $USER_LAYOUT
 done
 
 IS_CINNAMON=""

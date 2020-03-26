@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.7) focal; urgency=medium
+
+  * wasta-cinnamon-upgrade: migrating to cinnamon-layout
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 26 Mar 2020 16:04:10 +0300
+
 wasta-cinnamon-focal (0.1.6) focal; urgency=medium
 
   * postinst: installing wl-mono-squircle.svg as menu-icon
