@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.9) focal; urgency=medium
+
+  * Arc-Dark-Wasta: syncing from upstream and adding applet padding
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 28 Mar 2020 19:58:31 +0300
+
 wasta-cinnamon-focal (0.1.8) focal; urgency=medium
 
   * wasta-cinnamon-upgrade: re-run wasta-cinnamon-focal postinst
