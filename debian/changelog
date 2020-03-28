@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.11) focal; urgency=medium
+
+  * updated Arc-Dark-Wasta applet spacing
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 28 Mar 2020 21:47:00 +0300
+
 wasta-cinnamon-focal (0.1.10) focal; urgency=medium
 
   * nemo-actions: adding Compress_PDF

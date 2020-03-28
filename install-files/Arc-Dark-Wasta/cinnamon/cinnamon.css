@@ -1570,3 +1570,17 @@ StScrollBar {
   padding-right: 10px; }
   .applet.vertical {
     padding: 5px 0; }
+
+/* begin wasta additions */
+
+.applet-box {
+  padding: 0 5px; }
+
+.applet-box.vertical {
+    padding: 5px 0; }
+
+/* No .applet-icon.vertical so vertical panel needs to be 42 px or will be squished */
+.applet-icon {
+  padding: 0 5px; }
+
+/* end wasta additions */
