@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.10) focal; urgency=medium
+
+  * nemo-actions: adding Compress_PDF
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 28 Mar 2020 20:04:21 +0300
+
 wasta-cinnamon-focal (0.1.9) focal; urgency=medium
 
   * Arc-Dark-Wasta: syncing from upstream and adding applet padding
