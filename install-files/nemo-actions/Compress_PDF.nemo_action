@@ -7,7 +7,7 @@ Comment=compress PDF files giving the user a selection list of compression level
 #to support spaces, in 14.04, use EscpaeSpaces=true
 #to support spaces, in 12.04 use Quote=double
 #if Quote=double causes a problem, document why here.
-Exec=/home/akiverson/.local/share/nemo/actions/Compress_PDF.sh %F
+Exec=/usr/share/nemo/actions/Compress_PDF.sh %F
 Icon-Name=evince
 Selection=Any
 #EscapeSpaces: 14.04 command only.  replaces Quote.
