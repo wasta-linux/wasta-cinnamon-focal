@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="wl-mono-squircle.svg"
+   sodipodi:docname="wl-mono-squircle-new.svg"
    inkscape:export-filename="/data/1-ai-data/dev/wasta-images/wasta-images/2019-logos/w-dark-22.png"
    inkscape:export-xdpi="2.0599999"
    inkscape:export-ydpi="2.0599999"
@@ -59,18 +59,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.46921783"
-     inkscape:cx="-107.35507"
-     inkscape:cy="259.18081"
+     inkscape:zoom="0.66357423"
+     inkscape:cx="572.29404"
+     inkscape:cy="421.28073"
      inkscape:document-units="px"
-     inkscape:current-layer="g1080"
+     inkscape:current-layer="g1059"
      showgrid="false"
      units="px"
      inkscape:pagecheckerboard="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1019"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1305"
+     inkscape:window-height="999"
+     inkscape:window-x="615"
+     inkscape:window-y="28"
      inkscape:window-maximized="1"
      scale-x="0.26458" />
   <metadata
@@ -120,9 +120,10 @@
      style="display:inline">
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25112101;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 135.72461 64 C 95.989394 64 64 95.989394 64 135.72461 L 64 888.27539 C 64 928.01061 95.989394 960 135.72461 960 L 888.27539 960 C 928.01061 960 960 928.01061 960 888.27539 L 960 135.72461 C 960 95.989394 928.01061 64 888.27539 64 L 135.72461 64 z M 512 128 A 384 384 0 0 1 896 512 A 384 384 0 0 1 512 896 A 384 384 0 0 1 128 512 A 384 384 0 0 1 512 128 z "
+       d="M 135.72461,64 C 95.989394,64 64,95.989394 64,135.72461 V 888.27539 C 64,928.01061 95.989394,960 135.72461,960 H 888.27539 C 928.01061,960 960,928.01061 960,888.27539 V 135.72461 C 960,95.989394 928.01061,64 888.27539,64 Z M 512,128 A 384,384 0 0 1 896,512 384,384 0 0 1 512,896 384,384 0 0 1 128,512 384,384 0 0 1 512,128 Z"
+       id="rect870"
        transform="scale(0.26458333)"
-       id="rect870" />
+       inkscape:connector-curvature="0" />
   </g>
   <g
      style="display:none"
@@ -137,7 +138,7 @@
        inkscape:connector-curvature="0" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      transform="translate(0,-26.066646)"
      id="g1080"
      inkscape:groupmode="layer"
