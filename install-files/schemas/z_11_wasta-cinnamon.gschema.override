@@ -35,11 +35,14 @@
 #   2019-12-13 rik: restoring all wasta-specific cinnamon settings, as
 #       cinnamon-layout does not provide defaults anymore so that other
 #       distros can apply their own branding
+#   2020-04-12 rik: adding app-menu-label and app-menu-icon-name
 #
 # ==============================================================================
 
 [org.cinnamon]
 alttab-switcher-style = 'icons+thumbnails'
+app-menu-icon-name = 'wasta-linux-squircle'
+app-menu-label = 'Menu'
 cinnamon-settings-advanced = false
 desktop-effects = false
 desktop-effects-close-effect = 'none'

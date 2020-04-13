@@ -56,15 +56,6 @@ DIR=/usr/share/wasta-cinnamon
 LAYOUT_DIR=/usr/share/cinnamon-layout
 
 # ------------------------------------------------------------------------------
-# install menu-icon using update-alternatives
-# ------------------------------------------------------------------------------
-echo
-echo "*** Installing Wasta-Linux default menu-icon to update-alternatives system"
-echo
-update-alternatives --install $LAYOUT_DIR/menu-icon.svg menu-icon \
-    $DIR/resources/wl-mono-squircle.svg 150
-
-# ------------------------------------------------------------------------------
 # Dconf / Gsettings Default Value adjustments
 # ------------------------------------------------------------------------------
 echo
