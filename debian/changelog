@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (0.1.13) focal; urgency=medium
+
+  * relocate squircle icon, gsettings updates for app-menu
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Mon, 13 Apr 2020 16:46:11 -0500
+
 wasta-cinnamon-focal (0.1.12) bionic; urgency=medium
 
   * nemo-action: correct path for Compress_PDF script

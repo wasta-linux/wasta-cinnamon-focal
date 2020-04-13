@@ -114,9 +114,6 @@ titlebar-font = 'Ubuntu Bold 11'
 [org.cinnamon.muffin]
 edge-tiling = true
 
-[org.cinnamon.SessionManager]
-show-fallback-warning = false
-
 [org.cinnamon.sounds]
 close-enabled = false
 login-enabled = false
