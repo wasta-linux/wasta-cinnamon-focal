@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (1.0.1) focal; urgency=medium
+
+  * remove squircle icon (wasta-multidesktop provides)
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Tue, 07 Jul 2020 16:49:55 -0500
+
 wasta-cinnamon-focal (1.0.0) focal; urgency=medium
 
   * wasta-cinnamon-upgrade: add 4.6 upgrade compatibility
