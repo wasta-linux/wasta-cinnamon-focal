@@ -26,7 +26,6 @@
 #   2018-04-03 rik: removing schemas compile: schemas now in
 #       wasta-cinnmaon-layout-3-6
 #   2018-04-04 rik: re-adding schemas compile
-#   2020-03-26 rik: installing wl-mono-squircle.svg as menu-icon alternative
 #
 # ==============================================================================
 

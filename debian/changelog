@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (1.0.0) focal; urgency=medium
+
+  * wasta-cinnamon-upgrade: add 4.6 upgrade compatibility
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Tue, 07 Jul 2020 15:00:32 -0500
+
 wasta-cinnamon-focal (0.1.13) focal; urgency=medium
 
   * relocate squircle icon, gsettings updates for app-menu
