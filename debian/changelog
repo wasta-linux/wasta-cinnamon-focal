@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (1.0.3) focal; urgency=medium
+
+  * gschemas: reduce "favorites" to 3 apps so no scrolling in main menu
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 09 Jul 2020 15:02:16 -0500
+
 wasta-cinnamon-focal (1.0.2) focal; urgency=medium
 
   * NOT removing previous cinnamon-layout-x-y since dependencies ensure
