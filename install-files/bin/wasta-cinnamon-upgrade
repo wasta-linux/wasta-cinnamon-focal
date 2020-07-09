@@ -152,28 +152,6 @@ echo
 $DEBIAN_NONINTERACTIVE apt-get $YES dist-upgrade
 
 echo
-echo "*** Removing any previous version of wasta-cinnamon-layout"
-echo
-
-# 2016-05-04 rik: if attempting to remove a package that doesn't exist (such
-#   as can happen when using wasta-offline "offline only mode") apt-get purge
-#   will error and not remove anything. So instead found this way to do it:
-#       http://superuser.com/questions/518859/ignore-packages-that-are-not-currently-installed-when-using-apt-get-remove
-pkgToRemoveListFull="\
-    cinnamon-layout-4-2
-    cinnamon-layout-4-4"
-
-pkgToRemoveList=""
-for pkgToRemove in $(echo $pkgToRemoveListFull); do
-  $(dpkg --status $pkgToRemove &> /dev/null)
-  if [[ $? -eq 0 ]]; then
-    pkgToRemoveList="$pkgToRemoveList $pkgToRemove"
-  fi
-done
-
-$DEBIAN_NONINTERACTIVE apt-get $YES purge $pkgToRemoveList
-
-echo
 echo "*** Ensuring newest cinnamon-layout installed"
 echo
 

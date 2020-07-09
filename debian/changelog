@@ -1,3 +1,12 @@
+wasta-cinnamon-focal (1.0.2) focal; urgency=medium
+
+  * NOT removing previous cinnamon-layout-x-y since dependencies ensure
+    older verison is replaced. By removing it, would force remove
+    wasta-cinnamon-focal since newer cinnamon-layout wouldn't be installed
+    yet.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 09 Jul 2020 14:01:36 -0500
+
 wasta-cinnamon-focal (1.0.1) focal; urgency=medium
 
   * remove squircle icon (wasta-multidesktop provides)
