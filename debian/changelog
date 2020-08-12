@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (1.0.4) UNRELEASED; urgency=medium
+
+  * fix "desktop" not showing up in cinnamon-settings
+
+ -- Justin Luth <jluth@mail.com>  Wed, 12 Aug 2020 08:59:08 +0300
+
 wasta-cinnamon-focal (1.0.3) focal; urgency=medium
 
   * gschemas: reduce "favorites" to 3 apps so no scrolling in main menu
