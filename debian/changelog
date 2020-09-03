@@ -1,9 +1,15 @@
-wasta-cinnamon-focal (1.0.4) focal; urgency=medium
+wasta-cinnamon-focal (1.0.5) focal; urgency=medium
 
   * gschema.override: correcting panel icon size to 24px for ibus
     compatibility (so doesn't need "double click" to close)
 
  -- Rik Shaw <rikshaw76@gmail.com>  Thu, 03 Sep 2020 08:36:45 +0300
+
+wasta-cinnamon-focal (1.0.4) focal; urgency=medium
+
+  * fix "desktop" not showing up in cinnamon-settings
+
+ -- Justin Luth <jluth@mail.com>  Wed, 12 Aug 2020 08:59:08 +0300
 
 wasta-cinnamon-focal (1.0.3) focal; urgency=medium
 
