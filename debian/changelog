@@ -1,3 +1,10 @@
+wasta-cinnamon-focal (1.0.4) focal; urgency=medium
+
+  * gschema.override: correcting panel icon size to 24px for ibus
+    compatibility (so doesn't need "double click" to close)
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 03 Sep 2020 08:36:45 +0300
+
 wasta-cinnamon-focal (1.0.3) focal; urgency=medium
 
   * gschemas: reduce "favorites" to 3 apps so no scrolling in main menu
