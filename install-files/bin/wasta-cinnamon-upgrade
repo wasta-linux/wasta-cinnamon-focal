@@ -13,6 +13,7 @@
 #   2019-08-09 rik: updating for focal
 #   2020-03-26 rik: updating wasta-layout to cinnamon-layout
 #   2020-07-07 rik: updating for Cinnamon 4.6
+#   2021-01-08 rik: updating for Cinnamon 4.8
 #
 # ==============================================================================
 
@@ -111,28 +112,27 @@ else
     fi
 fi
 
-# add Wasta-Linux Cinnamon 4.6 PPA
-PPA_FILE="$APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-4-6-$SERIES.list"
+# add Wasta-Linux Cinnamon 4.8 PPA
+PPA_FILE="$APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-4-8-$SERIES.list"
 if ! [ -e $PPA_FILE ];
 then
     echo
-    echo "*** Adding Cinnamon 4.6 PPA"
+    echo "*** Adding Cinnamon 4.8 PPA"
     echo
 
-    echo "deb http://ppa.launchpad.net/wasta-linux/cinnamon-4-6/ubuntu $SERIES main" | \
+    echo "deb http://ppa.launchpad.net/wasta-linux/cinnamon-4-8/ubuntu $SERIES main" | \
         tee $PPA_FILE
-    echo "# deb-src http://ppa.launchpad.net/wasta-linux/cinnamon-4-6/ubuntu $SERIES main" | \
+    echo "# deb-src http://ppa.launchpad.net/wasta-linux/cinnamon-4-8/ubuntu $SERIES main" | \
         tee -a $PPA_FILE
 else
-    # found, but ensure Wasta-Linux Cinnamon 4.2 PPA ACTIVE (user could have accidentally disabled)
+    # found, but ensure Wasta-Linux Cinnamon 4.8 PPA ACTIVE (user could have accidentally disabled)
     # DO NOT match any lines ending in #wasta
     sed -i -e '/#wasta$/! s@.*\(deb http://ppa.launchpad.net\)@\1@' $PPA_FILE
 fi
 
 # remove older PPAs
-#rm -f $APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-3-6*
-#rm -f $APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-3-8*
-#rm -f $APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-4-0*
+rm -f $APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-4-4*
+rm -f $APT_SOURCES_D/wasta-linux-ubuntu-cinnamon-4-6*
 
 # ------------------------------------------------------------------------------
 # Perform dist-upgrade

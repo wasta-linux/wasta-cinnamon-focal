@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (1.1.0) focal; urgency=medium
+
+  * updating for Cinnamon 4.8
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Fri, 08 Jan 2021 16:56:44 +0300
+
 wasta-cinnamon-focal (1.0.5) focal; urgency=medium
 
   * gschema.override: correcting panel icon size to 24px for ibus
