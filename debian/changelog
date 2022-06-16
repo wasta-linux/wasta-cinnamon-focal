@@ -1,3 +1,10 @@
+wasta-cinnamon-focal (1.1.1) focal; urgency=medium
+
+  * add "Send by email..." nemo-action and also enable copy-to and
+    move-to right-click nemo menus.
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 16 Jun 2022 14:06:16 -0500
+
 wasta-cinnamon-focal (1.1.0) focal; urgency=medium
 
   * updating for Cinnamon 4.8
