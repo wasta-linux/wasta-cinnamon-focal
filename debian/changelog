@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (5.4.1) focal; urgency=medium
+
+  * wasta-cinnamon-upgrade/edge: rework cinnamon restart logic
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 18 Aug 2022 16:17:02 -0500
+
 wasta-cinnamon-focal (5.4.0) focal; urgency=medium
 
   * adding cinnamon 5.4 migration path
