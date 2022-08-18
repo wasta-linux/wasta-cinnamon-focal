@@ -8,7 +8,7 @@ Homepage: https://github.com/wasta-linux/wasta-cinnamon-focal
 
 Package: wasta-cinnamon-focal
 Architecture: all
-Depends: arc-theme, cinnamon, cinnamon-layout-4-2 | cinnamon-layout-4-4 | cinnamon-layout-4-6, muffin, nemo, wasta-backgrounds, wasta-core-focal, wasta-multidesktop-focal, wasta-papirus, ${misc:Depends}
+Depends: arc-theme, cinnamon, cinnamon-layout-4-2 | cinnamon-layout-4-4 | cinnamon-layout-4-6 | cinnamon-layout-5-4, muffin, nemo, wasta-backgrounds, wasta-core-focal, wasta-multidesktop-focal, wasta-papirus, ${misc:Depends}
 Recommends: blueberry, bookletimposer, gir1.2-nemo-3.0, nemo-audio-tab, nemo-compare, nemo-fileroller, nemo-image-converter, wasta-vertex-ubuntu
 Description: Wasta-Linux Cinnamon for Ubuntu 20.04 Focal
  Wasta-Linux 20.04 Focal Cinnamon core adjustments.

@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (5.4.0) focal; urgency=medium
+
+  * adding cinnamon 5.4 migration path
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 18 Aug 2022 10:25:00 -0500
+
 wasta-cinnamon-focal (1.1.2) focal; urgency=medium
 
   * fix Send_by_Email.nemo_action path

@@ -38,17 +38,23 @@
 #   2020-04-12 rik: adding app-menu-label and app-menu-icon-name
 #   2020-07-07 rik: making redmond7 settings as default here
 #   2020-09-02 rik: correct panel-zone-icon-sizes for ibus (24px)
+#   2022-08-18 rik: comment out desktop-effects-* as 5.4 cleaned up these names
+#       from 'desktop-effects-close-effect' to just 'desktop-effects-close'
+#       but since we have disabled at the higher level "desktop-effects" it
+#       doesn't really matter what we have set at this level and can just stay
+#       with cinnamon defaults.
 #
 # ==============================================================================
 
 [org.cinnamon]
 alttab-switcher-style = 'icons+thumbnails'
 app-menu-icon-name = 'wasta-linux-main-menu'
+# NOTE: app-menu-label set to '' or not via cinnamon-layout logic.
 app-menu-label = 'Menu'
 cinnamon-settings-advanced = false
 desktop-effects = false
-desktop-effects-close-effect = 'none'
-desktop-effects-map-effect = 'none'
+#desktop-effects-close-effect = 'none'
+#desktop-effects-map-effect = 'none'
 enable-indicators = false
 enabled-applets = ['panel1:left:1:menu@cinnamon.org:101', 'panel1:left:2:show-desktop@cinnamon.org:102', 'panel1:left:3:grouped-window-list@cinnamon.org:120', 'panel1:right:0:keyboard@cinnamon.org:124', 'panel1:right:1:removable-drives@cinnamon.org:106', 'panel1:right:2:inhibit@cinnamon.org:107', 'panel1:right:3:systray@cinnamon.org:108', 'panel1:right:4:bluetooth@cinnamon.org:109', 'panel1:right:5:network@cinnamon.org:110', 'panel1:right:6:sound@cinnamon.org:111', 'panel1:right:7:power@cinnamon.org:112', 'panel1:right:8:calendar@simonwiles.net:113', 'panel1:right:9:windows-quick-list@cinnamon.org:114']
 enabled-extensions = []
