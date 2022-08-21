@@ -1,3 +1,10 @@
+wasta-cinnamon-focal (5.4.2) focal; urgency=medium
+
+  * wasta-cinnamon-*: removing cinnamon restart: now handled
+    correctly by cinnamon-layout
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Sat, 20 Aug 2022 19:58:29 -0500
+
 wasta-cinnamon-focal (5.4.1) focal; urgency=medium
 
   * wasta-cinnamon-upgrade/edge: rework cinnamon restart logic
