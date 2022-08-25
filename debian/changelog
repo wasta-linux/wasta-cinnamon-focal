@@ -1,3 +1,9 @@
+wasta-cinnamon-focal (5.4.3) focal; urgency=medium
+
+  * resize-picture-nemo-action: correct extension selection list
+
+ -- Rik Shaw <rikshaw76@gmail.com>  Thu, 25 Aug 2022 13:53:22 -0500
+
 wasta-cinnamon-focal (5.4.2) focal; urgency=medium
 
   * wasta-cinnamon-*: removing cinnamon restart: now handled
